@@ -1,0 +1,719 @@
+@import "tailwindcss";
+
+:root {
+  --background: #272727;
+  --foreground: #ffffff;
+  --accent: #f3ca2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  background: var(--background);
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: #111;
+}
+
+.menu-toggle-icon {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.menu-toggle-bar {
+  position: absolute;
+  left: 1.375px;
+  width: 19.25px;
+  height: 3.09375px;
+  border-radius: .6875px;
+  background: #fff;
+  transform-origin: center;
+  transition:
+    transform 320ms cubic-bezier(.22, 1, .36, 1),
+    opacity 180ms ease;
+}
+
+.menu-toggle-bar-top {
+  top: 2.578125px;
+}
+
+.menu-toggle-bar-middle {
+  top: 9.453125px;
+}
+
+.menu-toggle-bar-bottom {
+  top: 16.328125px;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar-top {
+  transform: translateY(6.875px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar-middle {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar-bottom {
+  transform: translateY(-6.875px) rotate(-45deg);
+}
+
+.cv-section {
+  height: 100svh;
+}
+
+.cv-section-anchor {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.stepper-drop-marker {
+  transition: top 340ms cubic-bezier(.22, 1, .36, 1);
+  will-change: top;
+}
+
+.stepper-drop-direction[data-direction="up"] {
+  transform: rotate(180deg);
+}
+
+.stepper-drop {
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+}
+
+.stepper-drop-direction:not([data-direction="idle"]) .stepper-drop {
+  animation: stepper-drop-liquid 680ms both;
+}
+
+@keyframes stepper-drop-liquid {
+  0% {
+    border-radius: 50%;
+    transform: translateY(0) scale(1);
+  }
+
+  24% {
+    border-radius: 46% 46% 58% 58% / 38% 38% 62% 62%;
+    transform: translateY(2px) scaleX(.84) scaleY(1.55);
+  }
+
+  45% {
+    border-radius: 58% 58% 46% 46% / 68% 68% 34% 34%;
+    transform: translateY(1px) scaleX(.72) scaleY(.9);
+  }
+
+  64% {
+    border-radius: 50%;
+    transform: translateY(0) scaleX(1.18) scaleY(.84);
+  }
+
+  82% {
+    border-radius: 50%;
+    transform: translateY(0) scaleX(.96) scaleY(1.08);
+  }
+
+  100% {
+    border-radius: 50%;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 768px) and (min-height: 601px) {
+  .cv-section {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.section-label span {
+  display: block;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.menu-panel nav {
+  transform: translate(-50%, -50%);
+}
+
+html[data-analytics-available="false"] .menu-analytics-action {
+  display: none;
+}
+
+.site-footer-language button {
+  position: relative;
+}
+
+.site-footer-language button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+}
+
+.service-photo {
+  isolation: isolate;
+}
+
+.service-photo::before {
+  --service-dots-size: min(450px, 40vw);
+
+  content: "";
+  position: absolute;
+  right: 7%;
+  top: 12%;
+  z-index: 0;
+  width: var(--service-dots-size);
+  height: var(--service-dots-size);
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, .045) 1.35px, transparent 1.6px);
+  background-size: 9px 9px;
+}
+
+.career-content {
+  transform: translateY(-50%);
+}
+
+.resume-timeline::before {
+  content: "";
+  position: absolute;
+  top: 4.25vh;
+  bottom: 4.25vh;
+  left: calc(14.2544% - 17px);
+  width: 2px;
+  background: rgba(255, 255, 255, .38);
+}
+
+.resume-entry:first-child {
+  top: 2.875vh;
+}
+
+.resume-entry:nth-child(2) {
+  top: 29.375vh;
+}
+
+.resume-entry::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -24px;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  background: rgba(39, 39, 39, .9);
+}
+
+.resume-card-detailed .resume-entry p:nth-of-type(1),
+.resume-card-experience .resume-entry p:nth-of-type(1) {
+  margin-top: 2px;
+}
+
+.resume-card-detailed .resume-entry p:nth-of-type(2),
+.resume-card-experience .resume-entry p:nth-of-type(2) {
+  margin-top: 4px;
+}
+
+.resume-card-detailed .resume-entry-description,
+.resume-card-experience .resume-entry p.resume-entry-description {
+  margin-top: 8px;
+  font-size: clamp(8px, .667vw, 10px);
+  line-height: 1.45;
+}
+
+.testimonial-title--compact {
+  font-size: clamp(14px, 1.8vw, 27px);
+}
+
+.testimonial-title--compact span {
+  white-space: nowrap;
+}
+
+.work-card-skills {
+  box-shadow: inset 0 2px var(--accent);
+  transform: translate3d(0, calc(100% + 2px), 0);
+  transition: transform 460ms cubic-bezier(.22, 1, .36, 1);
+  will-change: transform;
+}
+
+.work-card:hover .work-card-skills,
+.work-card:focus-visible .work-card-skills {
+  transform: translate3d(0, 0, 0);
+}
+
+.work-card-skills-label {
+  font-size: clamp(10px, .8vw, 12px);
+  letter-spacing: .12em;
+  line-height: 1.3;
+}
+
+.work-card-skills-copy {
+  overflow-wrap: anywhere;
+  font-size: clamp(9px, .733vw, 11px);
+  line-height: 1.45;
+}
+
+.work-card-skills--dense .work-card-skills-copy {
+  font-size: clamp(8px, .633vw, 9.5px);
+  line-height: 1.35;
+}
+
+.testimonial-controls button::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+}
+
+@media (min-width: 1600px) {
+  .about-content,
+  .works-content,
+  .services-content,
+  .resume-content,
+  .testimonial-content,
+  .contact-content {
+    left: 50%;
+    width: 936px;
+    transform: translateX(-50%);
+  }
+
+  .career-content {
+    left: 50%;
+    width: 936px;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-content {
+    left: calc(50% - 468px);
+  }
+}
+
+@media (max-width: 767px), (max-width: 960px) and (max-height: 600px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  .cv-section-anchor {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+
+  .cv-section {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .site-header {
+    inset-inline: 20px;
+    height: 72px;
+  }
+
+  .site-header::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: -1;
+    height: 72px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .72), transparent);
+    pointer-events: none;
+  }
+
+  .brand {
+    left: 0;
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-role {
+    font-size: 8px;
+  }
+
+  .social-links,
+  .section-label,
+  .section-dots {
+    display: none;
+  }
+
+  .site-footer {
+    inset-inline: 20px;
+    height: calc(64px + env(safe-area-inset-bottom));
+  }
+
+  .site-footer-meta {
+    left: 0;
+    top: 32px;
+    gap: 6px;
+  }
+
+  .site-footer-language {
+    right: 0;
+    top: 32px;
+  }
+
+  .site-footer-privacy-link,
+  .site-footer-privacy-separator {
+    display: none;
+  }
+
+  .site-header > button:last-child {
+    right: 0;
+  }
+
+  .menu-panel nav {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hero-content {
+    left: 24px;
+    right: 24px;
+    top: 30svh;
+  }
+
+  .hero-content h1 {
+    width: auto;
+    min-width: 0;
+    font-size: clamp(32px, 10vw, 54px);
+  }
+
+  .hero-content > img {
+    margin-top: 5vh;
+  }
+
+  .about-content,
+  .services-content,
+  .resume-content,
+  .career-content,
+  .testimonial-content,
+  .contact-content,
+  .works-content {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    margin-inline: 24px;
+    padding-block: 120px 96px;
+    transform: none;
+  }
+
+  .about-content,
+  .services-content,
+  .testimonial-content {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .about-content h2,
+  .services-content h2,
+  .testimonial-content h2,
+  .works-content h2,
+  .contact-content h2 {
+    font-size: 27px;
+  }
+
+  .about-content br,
+  .services-content h2 br {
+    display: none;
+  }
+
+  .about-content p br {
+    display: none;
+  }
+
+  .skills-list {
+    gap: 34px;
+    padding-top: 0;
+  }
+
+  .works-content {
+    min-height: 100svh;
+  }
+
+  .works-content > h2,
+  .contact-content > h2 {
+    height: auto;
+  }
+
+  .works-grid {
+    margin-top: 48px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .work-card {
+    height: 150px;
+    min-height: 0;
+  }
+
+  .work-card-skills-label,
+  .work-card-skills-copy {
+    font-size: 11px;
+  }
+
+  .work-card-skills--dense .work-card-skills-copy {
+    font-size: 10px;
+  }
+
+  .service-photo {
+    height: min(90vw, 360px);
+    margin-bottom: 64px;
+  }
+
+  .service-photo::before {
+    --service-dots-size: min(450px, calc(100vw - 54px));
+
+    right: 6%;
+    top: 12%;
+    background-size: 8px 8px;
+  }
+
+  .experience {
+    bottom: -15%;
+    left: 15%;
+  }
+
+  .resume-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .resume-content article {
+    min-height: 512px;
+  }
+
+  .resume-content article h2 {
+    height: 40px;
+  }
+
+  .resume-timeline {
+    top: 40px;
+  }
+
+  .resume-timeline::before {
+    top: 34px;
+    bottom: 34px;
+    left: calc(14.2544% - 17px);
+  }
+
+  .resume-entry:first-child {
+    top: 23px;
+  }
+
+  .resume-entry:nth-child(2) {
+    top: 235px;
+  }
+
+  .resume-entry p:nth-of-type(1) {
+    margin-top: 13px;
+  }
+
+  .resume-entry p:nth-of-type(2) {
+    margin-top: 16px;
+  }
+
+  .resume-entry p:nth-of-type(3) {
+    margin-top: 34px;
+  }
+
+  .resume-card-detailed .resume-entry p:nth-of-type(1),
+  .resume-card-experience .resume-entry p:nth-of-type(1) {
+    margin-top: 2px;
+  }
+
+  .resume-card-detailed .resume-entry p:nth-of-type(2),
+  .resume-card-experience .resume-entry p:nth-of-type(2) {
+    margin-top: 4px;
+  }
+
+  .resume-card-detailed .resume-entry-description,
+  .resume-card-experience .resume-entry p.resume-entry-description {
+    margin-top: 8px;
+  }
+
+  .career-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 20px;
+  }
+
+  .career-content > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .testimonial-summary {
+    padding-top: 0;
+  }
+
+  .testimonial-details {
+    left: 0;
+  }
+
+  .testimonial-title {
+    height: auto;
+    margin-top: 48px;
+  }
+
+  .testimonial-content h2.testimonial-title--compact {
+    font-size: min(21px, 5.3vw);
+  }
+
+  .testimonial-quote-block {
+    height: auto;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .testimonial-original,
+  .testimonial-attribution,
+  .testimonial-controls {
+    position: static;
+    margin-top: 32px;
+  }
+
+  .testimonial-controls {
+    margin-left: 0;
+  }
+
+  .testimonial-controls button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .contact-content form {
+    margin-top: 48px;
+  }
+
+  .contact-content form > div:first-child {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-height: 600px) {
+  .menu-panel {
+    overflow-y: auto;
+  }
+
+  .menu-panel nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-inline: auto;
+    padding-block: 88px 32px;
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) and (min-height: 601px) {
+  .work-card-skills--dense {
+    padding: 4px 5px;
+  }
+
+  .work-card-skills--dense .work-card-skills-label {
+    font-size: 8px;
+    letter-spacing: .06em;
+  }
+
+  .work-card-skills--dense .work-card-skills-copy {
+    margin-top: 3px;
+    font-size: 7.5px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 480px) {
+  .works-grid,
+  .career-content {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    height: 144px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+
+  .cv-section-anchor {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+
+  .cv-section {
+    position: relative;
+    top: auto;
+  }
+
+  .stepper-drop-marker {
+    transition: none;
+  }
+
+  .stepper-drop-direction:not([data-direction="idle"]) .stepper-drop {
+    animation: none;
+  }
+
+  .menu-toggle-bar {
+    transition: none;
+  }
+
+  .work-card-skills {
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

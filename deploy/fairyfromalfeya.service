@@ -1,0 +1,39 @@
+[Unit]
+Description=Fairy From Alfeya CV website
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=fairyapp
+Group=fairyapp
+WorkingDirectory=/srv/fairyfromalfeya/current
+
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/fairyfromalfeya.env
+
+ExecStart=/usr/bin/node /srv/fairyfromalfeya/current/node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3000
+
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+UMask=0027
+
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=full
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+AmbientCapabilities=
+ReadWritePaths=/srv/fairyfromalfeya
+
+[Install]
+WantedBy=multi-user.target

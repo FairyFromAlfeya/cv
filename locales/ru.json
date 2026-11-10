@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "title": "Александр — Full-Stack и Solidity-разработчик",
+    "description": "Портфолио и резюме Александра — Full-Stack и Solidity-разработка для Web3-продуктов: DEX и bridge dApps, смарт-контракты, Node.js и Next.js."
+  },
+  "brand": {
+    "name": "Alexander",
+    "role": "full-stack developer"
+  },
+  "navigation": {
+    "sections": {
+      "introduce": "Главная",
+      "about": "Обо мне",
+      "works": "Мои работы",
+      "services": "Услуги",
+      "resume": "Резюме",
+      "career": "Карьера",
+      "philosophy": "Философия",
+      "contact": "Контакты"
+    },
+    "goToIntroduction": "Перейти к главному экрану",
+    "openMenu": "Открыть навигацию",
+    "closeMenu": "Закрыть навигацию",
+    "pageSections": "Разделы страницы",
+    "goToSection": "Перейти к разделу"
+  },
+  "footer": {
+    "copyright": "ChatGPT 5.6 Sol 2026",
+    "privacy": "Приватность",
+    "languageSwitcher": "Выбрать язык",
+    "switchToEnglish": "Переключить на английский",
+    "switchToRussian": "Переключить на русский"
+  },
+  "analytics": {
+    "message": "Мы используем аналитику и записи сессий, чтобы понять, как используется сайт, и улучшить его. Поля контактной формы никогда не записываются.",
+    "accept": "Разрешить аналитику",
+    "decline": "Нет, спасибо",
+    "privacyNote": "Выбор добровольный, и его можно изменить в любое время.",
+    "privacyLink": "Подробнее о приватности и аналитике",
+    "settings": "Настройки аналитики",
+    "settingsTitle": "Настройки аналитики",
+    "settingsDescription": "Выберите, может ли сайт использовать аналитику Яндекс Метрики и Вебвизора.",
+    "acceptedStatus": "Сейчас аналитика включена.",
+    "declinedStatus": "Сейчас аналитика выключена.",
+    "revoke": "Отключить аналитику",
+    "close": "Закрыть"
+  },
+  "hero": {
+    "backgroundAlt": "Иллюстрированный портрет креативного специалиста в маске",
+    "welcome": ["Добро пожаловать на", "мой сайт-резюме"],
+    "greetingAccent": "Привет",
+    "greetingFirst": "меня зовут",
+    "greetingSecond": "Александр"
+  },
+  "about": {
+    "eyebrow": "Обо мне",
+    "titleFirst": "Моя миссия —",
+    "titleAccent": "исследовать и развивать",
+    "titleAfterAccent": "",
+    "titleLast": "лучшие продукты для людей",
+    "description": "Меня вдохновляет создание сервисов и продуктов, которые радуют людей и делают их жизнь проще. Я готов воплотить в жизнь ваши самые блестящие идеи и концепции",
+    "skills": [
+      { "label": "TypeScript", "level": 100 },
+      { "label": "Java", "level": 70 },
+      { "label": "Python", "level": 40 },
+      { "label": "Мотивация", "level": 100 }
+    ]
+  },
+  "works": {
+    "backgroundAlt": "Оживлённая городская улица в окружении современной архитектуры",
+    "title": "Избранные работы",
+    "opensInNewTab": "открывается в новой вкладке",
+    "skillsLabel": "Инструменты и навыки",
+    "items": [
+      {
+        "id": "web3_world",
+        "title": "Web3.World",
+        "category": "DEX dApp",
+        "href": "https://web3.world/swap",
+        "skills": ["Solidity", "TypeScript", "Mocha", "Node.js"]
+      },
+      {
+        "id": "chain_connect",
+        "title": "Chain Connect",
+        "category": "Bridge dApp",
+        "href": "https://app.chainconnect.com/bridge",
+        "skills": ["Solidity", "TypeScript", "Mocha", "Node.js"]
+      },
+      {
+        "id": "oracle_frontend",
+        "title": "Oracle Frontend",
+        "category": "Фронтенд для DEX TWAP-оракула",
+        "href": "https://github.com/FairyFromAlfeya/oracle-frontend",
+        "skills": ["Node.js", "React.js", "Material UI", "Mobx", "nginx", "Nest.js", "Postgres", "Docker", "REST"]
+      },
+      {
+        "id": "p2p_exchange",
+        "title": "P2P Exchange",
+        "category": "Бэкенд для P2P-биржи",
+        "href": "https://latoken.zendesk.com/hc/en-us/articles/5488136948124-P2P-Trading-How-to-buy-Crypto",
+        "skills": ["Node.js", "Nest.js", "Jest", "Joi", "React.js", "Mobx", "AntD", "Material UI", "Java", "Spring", "Quarkus", "Kafka", "Redis", "Postgres", "Docker", "K8S", "Grafana", "Prometheus", "gRPC", "REST"]
+      },
+      {
+        "id": "hamster_kombat",
+        "title": "Hamster Kombat",
+        "category": "Смарт-контракты для dApp",
+        "href": "https://hamsterkombat.io/",
+        "skills": ["Solidity", "TypeScript", "Mocha", "Node.js"]
+      },
+      {
+        "id": "digital_aeronautics",
+        "title": "Digital Aeronautics",
+        "category": "Фронтенд на Next.js",
+        "href": "https://digitalaeronautics.com/",
+        "skills": ["Payload CMS", "Next.js", "nginx", "tailwind", "REST", "Mongo DB"]
+      },
+      {
+        "id": "alfasim",
+        "title": "AlfaSim",
+        "category": "Qt-приложение для Microsoft Flight Simulator 2024",
+        "href": "",
+        "skills": ["C++", "Qt"]
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Мои услуги",
+    "photoAlt": "Сюрреалистичная военная иллюстрация солдата на фоне горного поля боя",
+    "titleBeforeAccent": "Я люблю",
+    "titleAccent": "делать",
+    "titleAfterAccent": "всё",
+    "titleLast": "простым и увлекательным",
+    "items": ["Разработка", "Тестирование", "Исследования", "Дизайн", "Аналитика"],
+    "years": "Года",
+    "experience": "Опыта",
+    "working": "Работы"
+  },
+  "resume": {
+    "backgroundAlt": "Университетское здание под живописным небом",
+    "columns": [
+      {
+        "title": "Образование",
+        "items": [
+          {
+            "title": "Компьютерная безопасность",
+            "institution": "СПбГЭТУ «ЛЭТИ», Санкт-Петербург",
+            "period": "Сентябрь 2020",
+            "description": "Программа «Компьютерная безопасность» в ЛЭТИ посвящена защите компьютерных систем, сетей и данных от киберугроз. Студенты изучают кибербезопасность, криптографию, сетевую безопасность, программирование, операционные системы и защиту информации. Программа сочетает теоретические знания с практическими навыками и готовит выпускников к карьере в области кибербезопасности, информационной безопасности и ИТ"
+          },
+          {
+            "title": "Программная инженерия",
+            "institution": "СПбПУ, Санкт-Петербург",
+            "period": "Сентябрь 2021",
+            "description": "Программа «Программная инженерия» в СПбПУ посвящена проектированию, разработке, тестированию и сопровождению программных систем. Студенты изучают программирование, алгоритмы, базы данных, архитектуру программного обеспечения, веб-технологии и управление проектами. Программа сочетает теоретическую основу с практическими навыками разработки и готовит выпускников к карьере в программной инженерии, ИТ и смежных технологических областях"
+          }
+        ]
+      },
+      {
+        "title": "Опыт",
+        "items": [
+          {
+            "title": "Full-stack разработчик",
+            "institution": "LATOKEN, удалённо",
+            "period": "Май 2020 - Апрель 2022",
+            "description": "Работал над платформой криптовалютной биржи: интегрировал блокчейн-ноды в микросервисы, с нуля создавал P2P-сервис обмена криптовалюты на фиат и разрабатывал новые функции для системы бэк-офиса и фронтенда"
+          },
+          {
+            "title": "Solidity-разработчик блокчейна",
+            "institution": "Broxus, Сербия",
+            "period": "Май 2022 - Сентябрь 2026",
+            "description": "Solidity-разработчик с опытом создания смарт-контрактов для DeFi-протоколов, включая решения на основе Uniswap, Compound, вестинга, стейблкоинов и мостов. Разрабатывал, тестировал и улучшал контракты DEX и мостов, автоматизировал развёртывание и обновление контрактов, а также поддерживал библиотеки для разработки смарт-контрактов"
+          }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "backgroundAlt": "Тихий сад и деревья на берегу озера",
+    "previous": "Предыдущая цитата",
+    "next": "Следующая цитата",
+    "items": [
+      {
+        "quote": "Старый пруд...\nпрыгнула лягушка\nвсплеск воды.",
+        "original": "古池や蛙飛び込む水の音",
+        "author": "Мацуо Басё",
+        "descriptor": "Японское хайку",
+        "title": ["Малое действие", "рождает жизнь", "из пустоты"]
+      },
+      {
+        "quote": "Если бы у меня был выбор,\nя бы всё равно выбрал неправильно.\n\nЯ не падаю — я просто проверяю гравитацию.\n\nЕсли ты не веришь в себя, поверь в меня.",
+        "original": "",
+        "author": "Паша Техник",
+        "descriptor": "Русская философия",
+        "title": ["Вау! Ты решил", "посмотреть другие цитаты.", "Эммм..."]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Связаться со мной",
+    "formLabel": "Контактная форма",
+    "name": "Имя",
+    "email": "Электронная почта",
+    "subject": "Тема (необязательно)",
+    "message": "Сообщение",
+    "send": "Отправить",
+    "sending": "Отправка…",
+    "sendingStatus": "Сообщение отправляется…",
+    "successStatus": "Спасибо — ваше сообщение отправлено.",
+    "errorStatus": "Не удалось отправить сообщение. Пожалуйста, попробуйте ещё раз."
+  }
+}

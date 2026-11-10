@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="224" viewBox="0 0 40 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="stepper">
+<circle id="step_8" cx="20" cy="215.97" r="4" fill="white"/>
+<circle id="step_7" cx="20" cy="186.26" r="4" fill="white"/>
+<circle id="step_6" cx="20" cy="156.55" r="4" fill="white"/>
+<circle id="step_5" cx="20" cy="126.84" r="4" fill="white"/>
+<circle id="step_4" cx="20" cy="97.13" r="4" fill="white"/>
+<circle id="step_3" cx="20" cy="67.42" r="4" fill="white"/>
+<circle id="step_2" cx="20" cy="37.71" r="4" fill="white"/>
+<circle id="step_1" cx="20" cy="8" r="4" fill="#F3CA2F"/>
+</g>
+</svg>

@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "title": "Alexander — Full-Stack & Solidity Developer",
+    "description": "Alexander's portfolio and CV — full-stack and Solidity developer for Web3 products, smart contracts, Node.js services, and Next.js interfaces."
+  },
+  "brand": {
+    "name": "Alexander",
+    "role": "full-stack developer"
+  },
+  "navigation": {
+    "sections": {
+      "introduce": "Introduce",
+      "about": "What I do",
+      "works": "My works",
+      "services": "Services",
+      "resume": "Resume",
+      "career": "Career",
+      "philosophy": "Philosophy",
+      "contact": "Contact"
+    },
+    "goToIntroduction": "Go to introduction",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "pageSections": "Page sections",
+    "goToSection": "Go to"
+  },
+  "footer": {
+    "copyright": "ChatGPT 5.6 Sol 2026",
+    "privacy": "Privacy",
+    "languageSwitcher": "Select language",
+    "switchToEnglish": "Switch to English",
+    "switchToRussian": "Switch to Russian"
+  },
+  "analytics": {
+    "message": "We use analytics and session recordings to understand how this website is used and improve it. Contact form fields are never recorded.",
+    "accept": "Allow analytics",
+    "decline": "No thanks",
+    "privacyNote": "Your choice is optional and can be changed at any time.",
+    "privacyLink": "Privacy and analytics details",
+    "settings": "Analytics settings",
+    "settingsTitle": "Analytics settings",
+    "settingsDescription": "Choose whether this website may use Yandex Metrica and Webvisor analytics.",
+    "acceptedStatus": "Analytics is currently enabled.",
+    "declinedStatus": "Analytics is currently disabled.",
+    "revoke": "Turn off analytics",
+    "close": "Close"
+  },
+  "hero": {
+    "backgroundAlt": "Illustrated portrait of a masked creative professional",
+    "welcome": ["Welcome To", "My CV Website"],
+    "greetingAccent": "Hello",
+    "greetingFirst": "my name",
+    "greetingSecond": "is Alexander"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "titleFirst": "My mission is",
+    "titleAccent": "explore & develop",
+    "titleAfterAccent": "the",
+    "titleLast": "best products for people",
+    "description": "I am inspired to create services and products that bring joy to people and make their lives easier. I am ready to bring your most brilliant ideas and concepts to life",
+    "skills": [
+      { "label": "TypeScript", "level": 100 },
+      { "label": "Java", "level": 70 },
+      { "label": "Python", "level": 40 },
+      { "label": "Motivation", "level": 100 }
+    ]
+  },
+  "works": {
+    "backgroundAlt": "A busy city street framed by modern architecture",
+    "title": "Featured works",
+    "opensInNewTab": "opens in a new tab",
+    "skillsLabel": "Tools & skills",
+    "items": [
+      {
+        "id": "web3_world",
+        "title": "Web3.World",
+        "category": "DEX dApp",
+        "href": "https://web3.world/swap",
+        "skills": ["Solidity", "TypeScript", "Mocha", "Node.js"]
+      },
+      {
+        "id": "chain_connect",
+        "title": "Chain Connect",
+        "category": "Bridge dApp",
+        "href": "https://app.chainconnect.com/bridge",
+        "skills": ["Solidity", "TypeScript", "Mocha", "Node.js"]
+      },
+      {
+        "id": "oracle_frontend",
+        "title": "Oracle Frontend",
+        "category": "Frontend for DEX TWAP oracle",
+        "href": "https://github.com/FairyFromAlfeya/oracle-frontend",
+        "skills": ["Node.js", "React.js", "Material UI", "Mobx", "nginx", "Nest.js", "Postgres", "Docker", "REST"]
+      },
+      {
+        "id": "p2p_exchange",
+        "title": "P2P Exchange",
+        "category": "Backend for p2p exchange",
+        "href": "https://latoken.zendesk.com/hc/en-us/articles/5488136948124-P2P-Trading-How-to-buy-Crypto",
+        "skills": ["Node.js", "Nest.js", "Jest", "Joi", "React.js", "Mobx", "AntD", "Material UI", "Java", "Spring", "Quarkus", "Kafka", "Redis", "Postgres", "Docker", "K8S", "Grafana", "Prometheus", "gRPC", "REST"]
+      },
+      {
+        "id": "hamster_kombat",
+        "title": "Hamster Kombat",
+        "category": "Smart-contracts for dApp",
+        "href": "https://hamsterkombat.io/",
+        "skills": ["Solidity", "TypeScript", "Mocha", "Node.js"]
+      },
+      {
+        "id": "digital_aeronautics",
+        "title": "Digital Aeronautics",
+        "category": "Next.js frontend",
+        "href": "https://digitalaeronautics.com/",
+        "skills": ["Payload CMS", "Next.js", "nginx", "tailwind", "REST", "Mongo DB"]
+      },
+      {
+        "id": "alfasim",
+        "title": "AlfaSim",
+        "category": "Qt app for Microsoft Flight Simulator 2024",
+        "href": "",
+        "skills": ["C++", "Qt"]
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "My services",
+    "photoAlt": "Surreal wartime illustration of a soldier against a mountainous battlefield",
+    "titleBeforeAccent": "I like",
+    "titleAccent": "to make",
+    "titleAfterAccent": "things",
+    "titleLast": "easy and enthralling",
+    "items": ["Development", "Testing", "Research", "Design", "Analytics"],
+    "years": "Years",
+    "experience": "Experience",
+    "working": "Working"
+  },
+  "resume": {
+    "backgroundAlt": "A university building beneath a painted sky",
+    "columns": [
+      {
+        "title": "Education",
+        "items": [
+          {
+            "title": "Computer security",
+            "institution": "ETU, Saint-Petersburg",
+            "period": "Sep 2020",
+            "description": "The Computer Security program at LETI focuses on protecting computer systems, networks, and data from cyber threats. Students study cybersecurity, cryptography, network security, programming, operating systems, and information protection. The program combines theoretical knowledge with practical skills and prepares graduates for careers in cybersecurity, information security, and IT"
+          },
+          {
+            "title": "Software engineering",
+            "institution": "SPbPU, Saint-Petersburg",
+            "period": "Sep 2021",
+            "description": "The Software Engineering program at SPbPU focuses on the design, development, testing, and maintenance of software systems. Students study programming, algorithms, databases, software architecture, web technologies, and project management. The program combines theoretical foundations with practical development skills and prepares graduates for careers in software engineering, IT, and related technology fields"
+          }
+        ]
+      },
+      {
+        "title": "Experience",
+        "items": [
+          {
+            "title": "Full-stack developer",
+            "institution": "LATOKEN, Remote",
+            "period": "May 2020 - Apr 2022",
+            "description": "Worked on a cryptocurrency exchange platform, integrating blockchain nodes into microservices, building a P2P crypto-to-fiat exchange service from scratch, and developing new features for both the back-office system and frontend"
+          },
+          {
+            "title": "Solidity blockchain developer",
+            "institution": "Broxus, Serbia",
+            "period": "May 2022 - Sep 2026",
+            "description": "Solidity Developer with experience building smart contracts for DeFi protocols, including Uniswap, Compound, vesting, stablecoin, and bridge solutions. Worked on developing, testing, and improving DEX and bridge contracts, automating contract deployment and upgrades, and maintaining smart contract development libraries"
+          }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "backgroundAlt": "A quiet lakeside garden and trees",
+    "previous": "Previous quote",
+    "next": "Next quote",
+    "items": [
+      {
+        "quote": "Old pond...\na frog jumps in\nwater's sound.",
+        "original": "古池や蛙飛び込む水の音",
+        "author": "Matsuo Basho",
+        "descriptor": "Japanese haiku",
+        "title": ["A small action", "gives rise to life", "out of the void"]
+      },
+      {
+        "quote": "If I had a choice,\nI’d still choose wrong.\n\nI’m not falling — I’m just testing gravity.\n\nIf you don’t believe in yourself, believe in me.",
+        "original": "",
+        "author": "Pasha Technik",
+        "descriptor": "Russian philosophy",
+        "title": ["Wow! You've decided", "to check other quotes.", "Uhmmm..."]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in touch",
+    "formLabel": "Contact form",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject (Optional)",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "sendingStatus": "Sending your message…",
+    "successStatus": "Thanks — your message has been sent.",
+    "errorStatus": "Sorry, your message could not be sent. Please try again."
+  }
+}
